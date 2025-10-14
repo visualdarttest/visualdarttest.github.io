@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script>
+        // Capture the full query string from the current URL
+        const query = window.location.search;
+        // Append it to your custom URI scheme and redirect to your Unity app
+        window.location = "fmomogame://auth/tiktok/callback" + query;
+    </script>
 </head>
-<body>
-    hello world
-</body>
 </html>
